@@ -1,15 +1,11 @@
 package main
 
-// wrting fibonnaci in GoLang
-func fibonnacci(int n) {
-	res := 0
-	if n == 0 || n == 1 {
-		res := n
-		return res
+// Fibonacci sequence terms
+func fibonnacci(n int) {
+	if n <=1 {
+	return n
 	}
+
+	return fibonacci(n-1) + fibonacci(n-2)
 }
 
-func main() {
-	n := 0
-	res := 0
-}
